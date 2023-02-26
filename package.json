@@ -1,0 +1,15 @@
+{
+  "name": "template-generator",
+  "version": "1.0.0",
+  "description": "This program is a command-line tool that allows users to generate various files from templates. It is designed to help developers quickly create new files based on predefined templates for common use cases, such as creating controllers or services in a web application. The program prompts the user for input and generates a file based on the user's responses and the selected template. It is intended to save time and increase productivity by automating repetitive tasks involved in file creation.",
+  "scripts": {
+    "create": "ts-node index.ts",
+    "build": "tsc"
+  },
+  "author": "Marcin Czaniecki",
+  "devDependencies": {
+    "@types/node": "^18.14.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
