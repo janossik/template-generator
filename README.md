@@ -30,7 +30,7 @@ ts-node index.js <command> <template>
 
 ## Templates
 
-Templates are stored in the src/templates directory and are named <`template name`>.template.ts. Each template exports a create function that takes a set of properties and generates a file. Additionally, a props object should be defined to allow querying function arguments.
+Templates are stored in the src/templates directory and are named `<template name>`.template.ts. Each template exports a create function that takes a set of properties and generates a file. Additionally, a props object should be defined to allow querying function arguments.
 
 ### Example Template
 
