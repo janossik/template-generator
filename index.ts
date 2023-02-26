@@ -25,7 +25,11 @@ const generateFileFromTemplate = async <T extends string>(
       fs.writeFileSync(path.join(currentPath, ...props.name.split("/").slice(0, -1), `${props.name.split("/").at(-1)}.${type}.ts`), content);
     });
   } catch (error) {
-    console.error(`\x1b[31mAn error occurred while creating the file: \x1b[37m${error.message}\x1b[0m`);
+    if (error instanceof Error) {
+      console.error(`\x1b[31mAn error occurred while creating the file: \x1b[37m${error.message}\x1b[0m`);
+    } else {
+      console.error(`\x1b[31mAn error occurred while creating the file: \x1b[37m${JSON.stringify(error)}\x1b[0m`);
+    }
   }
 };
 
